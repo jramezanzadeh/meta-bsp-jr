@@ -1,3 +1,5 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
-# We just override vc4graphics.cfg in meta-raspberrypi layer.
+# override vc4graphics.cfg in meta-raspberrypi layer.
+
+SRC_URI += "file://kernel-config.cfg"
